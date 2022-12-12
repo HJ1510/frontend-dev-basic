@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <title>리스트 정의하기</title>
 <style type="text/css">
-ul	{ list-style-type:lower-roman }
-ol	{ list-style-type:circle }
+/* ul, ol은 콘텐츠의 의미구분만 있을뿐 실제 구현에서는 별 차이 없음 */
+ul	{ list-style-type: disc }
+ol	{ list-style-type: upper-roman }
 
+/* 보통은 리스트 스타일을 없애고 시작함.. 기본타입 쓰지 않기때문 */
+ul , ol {list-style-type: none}
 </style>
 </head>
 <body>
