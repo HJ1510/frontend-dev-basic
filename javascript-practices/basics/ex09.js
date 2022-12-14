@@ -20,10 +20,15 @@ MyObject.prototype.info = function() {
 var o1 = new MyObject('마이콜', 30);
 o1.info();
 
+var o3 = new MyObject('마이콜', 30);
+o3.school='bit';
+o3.course='JAVA';
+o3.info();
+
 // MyObject 객체생성2
 var o2 = new MyObject('둘리', 10);
 o2.info = function() {
     console.log('비밀!')
 }
 
-o2.info()
+o2.info();
