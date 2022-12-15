@@ -3,6 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener('load', function(){
+	document
+		.getElementById("outer-div")
+		.addEventListener('click', function(){
+		console.log('outer-div clicked');
+	});
+		
+	document
+		.getElementById("inner-div")
+		.addEventListener('click', function(event){
+			event.stopPropagation();   // 여기서 event stop
+		console.log('inner-div clicked');
+	});
+		
+	document
+		.getElementById("header")
+		.addEventListener('click', function(){
+		console.log('header clicked');
+	});
+		
+	document
+		.getElementById("text")
+		.addEventListener('click', function(){
+		console.log('text clicked');
+	});
+});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

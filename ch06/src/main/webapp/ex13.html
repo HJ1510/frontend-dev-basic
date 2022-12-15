@@ -3,10 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+/*
+기본 이벤트 동작 막기
+1. anchor : 버튼이나 메뉴로 사용할 때(click)
+2. form : Validation(submit event)
+*/
+ 
+window.addEventListener('load', function(){
+	document
+		.getElementById('btn-delete')
+		.addEventListener('click', function(event){
+			event.preventDefault();
+			console.log("popup 띄우기");
+		});
+});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>6. 기본(default) Event Hanlder 동작 막기 - 1. anchor</h2>	
-	<a href="" id="btn-delete">삭제</a>
+	비밀번호<input type="text">
+	<a href="https://www.naver.com/" id="btn-delete">삭제</a>
 </body>
 </html>
