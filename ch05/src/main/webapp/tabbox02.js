@@ -1,4 +1,15 @@
 
+/*
+var liselected = null;
+var onTabClicked = function(){
+	console.log('clicked-' + this.innerText);
+	if(selected != null){
+		liselected.className="";
+	}
+	this.className = "selected";
+	liselected = this;
+}
+*/
 
 var onTabClicked = function(){
 	var divTabBox = document.getElementsByClassName('tab-box')[0];
