@@ -3,6 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+/*
+ 용어 정리
+ 1. 태그(tag)
+ 	HTML 문서 안에서 텍스트나 콘텐츠를 정의할 때 쓰는 마크업(Mark-up)
+ 2. 문서객체(Document Object)
+ 	- 실제 브라우저의 구현을 DOM(Document Object Model)이라고 한다.
+ 	- JavaScript에서 DOM에 접근할때는 document라는 이름을 사용한다.
+ 	- 구현 tree를 구성하는 노드(Node)는 HTMLElement Object이다.
+ 3. 노드
+ 	- DOM Tree의 각각의 요소
+ */
+ 
+var el = document.getElementById("header-3");
+console.log("dom load 전: " + el);
+
+window.onload = function(){
+	var el = document.getElementById("header-3");
+	console.log("dom load 후: " + el);
+};
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

@@ -3,6 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.onload = function(){
+	// 1. id
+	var header01 = document.getElementById("header-01");
+	var header02 = document.getElementById("header-02");
+	
+	// 2. tag name
+	var h4s = document.getElementsByTagName("h4");
+	// 3. class name
+	
+	// 4. CSS Selector(선택)
+	
+	
+	setTimeout(function(){
+		header01.innerText += ' by getElementById()';
+		header02.innerText += ' by getElementById()';
+		
+		h4s[0].innerText += ' by getElementsByTagName()';
+		h4s[1].innerText += ' by getElementsByTagName()';
+	}, 1000);
+}
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

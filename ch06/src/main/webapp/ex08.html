@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.onload = function(){
+	setTimeout(function(){
+		var imgElement = document.createElement("img");
+		imgElement.src = 'https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/4Khk/image/s11HNZYvibBEpJytBhS9ihZjD4o.jpg';
+		imgElement.style.width = "200px";
+		imgElement.alt = "귀여워";
+		imgElement.title = "귀여워";
+		document.body.appendChild(imgElement);
+	}, 1000);
+}
+</script>
 </head>
 <body>
 	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
