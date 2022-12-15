@@ -28,4 +28,4 @@ myObject.f1.call(yourObject, "Hi", "again");
 var f2 = function(){
     console.log(this.v);
 }.bind(yourObject); // bind : this 바뀌고 대기 (호출이 따로 될때까지)
-f2();
+f2(); // 호출
