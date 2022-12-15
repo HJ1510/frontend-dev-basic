@@ -1,17 +1,15 @@
 
-/*
-var liselected = null;
+/*var liselected = null;
 var onTabClicked = function(){
 	console.log('clicked-' + this.innerText);
-	if(selected != null){
+	if(liselected != null){
 		liselected.className="";
 	}
 	this.className = "selected";
 	liselected = this;
-}
-*/
+}*/
 
-var onTabClicked = function(){
+ var onTabClicked = function(){
 	var divTabBox = document.getElementsByClassName('tab-box')[0];
 	var ul = divTabBox.childNodes[1];
 	lis = ul.getElementsByClassName('selected');
@@ -23,7 +21,7 @@ var onTabClicked = function(){
 	//(lis.length == 1) && (lis[0].className=""); 
 	// 앞이 false면 뒤에 실행x 앞이 true면 뒤에 실행 () 연산자 우선순위때문에 표시 	
 	this.className = "selected";
-}
+} 
 	
 	
 	
