@@ -8,16 +8,30 @@ console.log(window.n, n);
 
 var email = "dooly@gmail.com";
 console.log(window.email, email); /* 전역변수/전역함수의 이름은 window의 속성 */
+
+// 팝업창
+setTimeout(function(){
+	var child = window.open("popup.html", "popup", "width=600, height=400")
+	setTimeout(function(){
+		// 자식창(popup창)의 내용 바꾸기 (도메인 path가 같을때만 가능)
+		child.document.write("<h1>popup contents changed</h1>");
+	}, 2000)
+	
+	setTimeout(function(){
+		// child(자식창의 window 객체) 이동
+		child.moveTo(200,200);
+	}, 4000)
+}, 2000)
 </script>
 </head>
 <body>
 <body>
 	<h1>BOM(Browser Object Model)</h1>
 	<h2>1. window 전역 객체(Global Object)</h2>
-	<ul>
-		<li>자바스크립트가 브라우저 창(window)을 제어하기 위한 객체</li>
-		<li>자바스크립트 실행과 관련된 환경 정보에 접근이 가능한 객체(Environments, Variable Object)</li>		
-	</ul>
+	<ol>
+		<li>1) 자바스크립트가 브라우저 창(window)을 제어하기 위한 객체</li>
+		<li>2) 자바스크립트 실행과 관련된 환경 정보에 접근이 가능한 객체(Environments, Variable Object)</li>		
+	</ol>
 </body>
 </body>
 </html> 
