@@ -14,6 +14,14 @@ var onTabClicked = function(){
 	var ul = divTabBox.childNodes[1];
 	lis = ul.getElementsByClassName('selected');
 	
+	console.log("childNodes[0]" + divTabBox.childNodes[0]);
+	console.log("childNodes[1]" + divTabBox.childNodes[1]);
+	console.log("childNodes[2]" + divTabBox.childNodes[2]);
+	console.log("childNodes[3]" + divTabBox.childNodes[3]);
+	console.log("childNodes[4]" + divTabBox.childNodes[4]);
+	console.log("childNodes[5]" + divTabBox.childNodes[5]);
+	console.log("childNodes[6]" + divTabBox.childNodes[6]);
+	
 	if(lis.length == 1){
 		lis[0].className="";
 	}
@@ -27,11 +35,11 @@ var onTabClicked = function(){
 	
 window.addEventListener('load', function(){
 	var divTabBox = document.getElementsByClassName('tab-box')[0];
-	console.log(divTabBox);
+	//console.log(divTabBox);
 	var ul = divTabBox.childNodes[1];
-	console.log(ul);
+	//console.log(ul);
 	var lis = ul.getElementsByTagName('li');
-	console.log(lis);
+	//console.log(lis);
 	
 	// lis.forEach(function(li){ // lis유사배열
 	Array.prototype.forEach.call(lis, function(li){
