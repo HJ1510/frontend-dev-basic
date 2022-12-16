@@ -6,6 +6,26 @@
 <script type="text/javascript">
 $(function() {
 	setTimeout(function(){
+		// $("h2 a").attr("href", "https://www.naver.com/");
+		// $("h2 a").attr("target", "_blank"); // 새로운 탭에서 열림
+		// $("h2 a").attr("title", "우리회사 좋은회사~");
+		// $("h2 a").css("font-size", "0.75em");
+
+		// 함수 체인 ** 추천
+		// $("h2 a")
+		//	.attr("href", "https://www.naver.com/")
+		//	.attr("target", "_blank")
+		//	.attr("title", "우리회사 좋은회사~")
+		//	.css("font-size", "0.75em");
+
+		$("h2 a")
+			.attr({
+				href: "https://www.naver.com/",
+				target: "_blank",
+				title: "우리회사 좋은회사~"
+			})
+			.css("font-size", "0.75em");
+		
 	}, 2000);
 });  
 </script>

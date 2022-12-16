@@ -6,8 +6,16 @@
 <script type="text/javascript">
 $(function() {
 	setTimeout(function(){
+		$("h2, p")
+			.wrapAll("<div>")
+			.parent()				// travese API
+			.css({
+				border: "1px solid #ccc",
+				width: "200px",
+				padding: "10px"
+			});
 	}, 2000);
-});  
+});   
 </script>
 </head>
 <body>

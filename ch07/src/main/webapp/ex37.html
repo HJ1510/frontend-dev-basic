@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>sample1</title>
-<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
 <script type="text/javascript">
 
 var images = [ 
@@ -20,9 +20,13 @@ $(function(){
 
 	$("button").click(function(){
 		// 랜덤 변수 
-		var result = Math.floor( Math.random() * (images.length-1)  ) + 1;
+		// var result = Math.floor( Math.random() * 4); // 4개의 수가 랜덤으로 출력(0, 1, 2, 3)
+		// console.log(result);
+		var index = Math.floor( Math.random() * images.length);	
+		var data = images[index].split(":");
+		$("p img").attr("src", "images/" + data[1]).attr("alt", data[0]);
+		console.log("data[1]:"+data[1]+" data[0]"+data[0]);
 	});
-	
 });
 </script>
 </head>
