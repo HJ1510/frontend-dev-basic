@@ -10,7 +10,7 @@
 <script src='${pageContext.request.contextPath }/assets/js/jquery/jquery-3.6.0.js'></script>
 <script>
 $(function(){
-	$("#btn-getdata").click(function(){
+	$("btn-getdata").click(function(){
 		$.ajax({
 			url: "${pageContext.request.contextPath }/api/01",
 			async: true,
