@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
-<script>
+<script>  // jQuery 필터임 cf) ex12는 css가 지원
 $(function(){
 	setTimeout(function(){
+		$('li:first').css('color', 'red');
+		$('li:last').css('color', 'blue');
 	}, 1000);
 });
 </script>

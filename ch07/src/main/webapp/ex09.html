@@ -6,6 +6,8 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$("li > strong").css("color", "green").css("font-weight", "normal"); // > 자식표시(css3)
+		$("li > div > strong").css("color", "blue");
 	}, 1000);
 });
 </script>

@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
-<script>
+<script> // 앞에 두는것 cf.ex20은 내부를 바꾸는것
 $(function(){
 	setTimeout(function(){
+		var htmls = "<h1>타이틀</h1>"
+			$("#p1").before(htmls);
 	}, 1000);
 });
 </script>

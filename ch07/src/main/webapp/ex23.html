@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
-<script>
+<script> // cf.ex21은 내부를 바꾸는것
 $(function(){
 	setTimeout(function(){
+		var htmls = "<p>내용입니다.</p>"
+			$("#h2").after(htmls);
 	}, 1000);
 });
 </script>
