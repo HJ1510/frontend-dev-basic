@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 압축버젼(애플리케이션 서버 호스팅): compressed, production 강사님 선호-->
+<!-- script src='jquery/jquery-3.6.0.min.js'></script-->
+
+<!-- 압축버젼(CDN): compressed, production 많이 사용** -->
+<!-- script src='https://code.jquery.com/jquery-3.6.0.min.js'></script-->
+
+<!-- 소스버젼(애플리케이션 서버 호스팅): uncompressed, development -->
+<script src='jquery/jquery-3.6.0.js'></script>
+
+<script>
+// 버전 확인, $는 jQuery의 alias임
+console.log(jQuery().jquery, $().jquery);
+
+// jQuery Object
+var $obj1 = jQuery();
+console.log(typeof(jQuery), typeof($obj1), $obj1 instanceof Array, $obj1 instanceof Object);
+
+</script>
+</head>
+<body>
+	<h1>jQuery 로딩</h1>
+</body>
+</html>
+ 
