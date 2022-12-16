@@ -12,5 +12,14 @@ public class ApiTestController {
 		return "ajax01";
 	}
 	
+	@RequestMapping("/02")
+	public String ajax02() {
+		return "ajax02";
+	}
+	
+	@RequestMapping("/03")
+	public String ajax03() {
+		return "ajax03";
+	}
 	
 }

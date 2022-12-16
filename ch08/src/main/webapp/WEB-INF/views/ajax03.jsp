@@ -10,16 +10,24 @@
 <script src='${pageContext.request.contextPath }/assets/js/jquery/jquery-3.6.0.js'></script>
 <script>
 $(function(){
+	var formData = {
+			name: "먼지",
+			email: "사랑해@",
+			password: "1234",
+			gender: "female"
+	}
 	$("#btn-getdata").click(function(){
 		$.ajax({
-			url: "${pageContext.request.contextPath }/api/01",
+			url: "${pageContext.request.contextPath }/api/03",
 			async: true,
-			type: "get",
-			dataType: "json",
+			type: "post",
+			dataType: "application/json",
+			data: JSON.stringify(formData),
 			success: function(response){
 				var htmls = "";
-				htmls += ("<h1>"+response.name+"</h1>")
-				htmls += ("<h2>"+response.age+"</h2>")
+				htmls += ("<h1>"+response.no+"</h1>")
+				htmls += ("<h2>"+response.name+"</h2>")
+				htmls += ("<h3>"+response.gender+"</h3>")
 				$("#data").html(htmls);
 			},
 			error: function(xhr, status, error) {
@@ -33,9 +41,9 @@ console.log($().jquery);
 </script>
 </head>
 <body>
-	<h1>Ajax Test01</h1>
+	<h1>Ajax Test03</h1>
 	
-	<button id="btn-getdata">데이터 가져오기</button>
+	<button id="btn-getdata">데이터 보내기</button>
 	<div id="data"></div>
 
 </body>
